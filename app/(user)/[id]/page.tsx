@@ -5,7 +5,7 @@ import { Metadata, ResolvingMetadata } from "next";
 
 type Props = {
 	params: { id: string };
-	title: { title: string};
+	name: { title: string};
 	searchParams: { [key: string]: string | string[] | undefined };
 };
 
@@ -24,7 +24,7 @@ export async function generateMetadata(
 	const id = params.id;
 
 	// fetch data
-	const product = await fetch(`${BASE_URL}/api/products/${id}`).then((res) => res.json());
+	const product = await fetch(`https://fakestoreapi.com/products/${id}`).then((res) => res.json());
 
 	// optionally access and extend (rather than replace) parent metadata
 	// const previousImages = (await parent).openGraph?.images || [];
@@ -37,6 +37,7 @@ export async function generateMetadata(
 		},
 	};
 }
+
 
 export default async function Detail(props: Props) {
 	let data = await getData(props.params.id);
