@@ -47,6 +47,7 @@ export default async function Detail(props: Props) {
 			title={data?.name || "NoTitle"}
 			price={data?.price || "No Prce"}
 			desc={data?.desc || "No Description"}
+			seller={data?.seller || "No Seller"}
 			image={
 				data?.image ||
 				"https://i0.wp.com/sunrisedaycamp.org/wp-content/uploads/2020/10/placeholder.png?ssl=1"
