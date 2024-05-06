@@ -164,7 +164,7 @@ const handleFilter = (event: any) => {
         </Modal.Body>
       </Modal>
       </section>
-      <DataTable className=''  progressPending={loading} customStyles={customStyles}	columns={columns} data={products} pagination persistTableHead/>
+      <DataTable className=''  progressPending={loading}	columns={columns} data={products} pagination persistTableHead/>
     </main>
   )
 }
