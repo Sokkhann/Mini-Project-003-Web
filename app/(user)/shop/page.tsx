@@ -6,7 +6,6 @@ import { fetchUserProfile } from "@/redux/features/userProfile/userProfileSlice"
 import { useSession, signIn, signOut } from "next-auth/react";
 import Image from "next/image";
 import { useGetProductsQuery } from "@/redux/services/product";
-import CreateProductForm from "@/app/(admin)/product/page";
 
 export default function page() {
 	const { data: session } = useSession();
@@ -41,7 +40,6 @@ export default function page() {
 		// 	</button>
 		// </main>
 		<>
-		<CreateProductForm/>
 		</>
 	);
 }
