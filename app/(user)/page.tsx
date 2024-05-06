@@ -13,7 +13,6 @@ import React, { useEffect, useState } from "react";
 
 export default function Page() {
 
-	
 	const [products, setProducts] = useState([]);
 	const router                  = useRouter();
 
@@ -30,7 +29,6 @@ export default function Page() {
 		 setProducts(data.results);
 		 const totalPage = Math.ceil(data.total/10);
 		 setTotalPage(totalPage); // Assuming 10 items per page
-	   
 		};
 	   
 		fetchData();
@@ -86,6 +84,7 @@ export default function Page() {
 						image   = {product.image}
 						price   = {product.price}
 						desc 	= {product.desc}
+						seller  = {product.seller}
 					/>
 				))}
 			</div>

@@ -6,7 +6,7 @@ import { useAppDispatch } from "@/redux/hook";
 import { decrement, increment } from "@/redux/features/counter/counterSlice";
 
 
-export default function CardComponent({id, title, image, price, onClick}: CartProductType) {
+export default function CardComponent({id, title, image, price, seller, onClick}: CartProductType) {
   // useAppDispatch is handled on event from user and send it to store
   const dispatch = useAppDispatch();
 

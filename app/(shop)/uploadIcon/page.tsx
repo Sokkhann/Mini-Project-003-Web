@@ -41,7 +41,7 @@ const validationSchema = Yup.object().shape({
 		.required("Required"),
 });
 
-export default function page() {
+export default function Page() {
   
  const[uploadImage,{data,error}]=useUploadIconMutation();
 

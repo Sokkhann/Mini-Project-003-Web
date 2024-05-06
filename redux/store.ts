@@ -3,7 +3,7 @@ import counterSlice from './features/counter/counterSlice'
 import cartSlice from './features/cart/cartSlice'
 import  userProfileSlice  from './features/userProfile/userProfileSlice'
 import { ecommerceApi } from './api'
-import {authSlice} from './features/auth/authSlice'
+import authSlice from './features/auth/authSlice'
 // create store
 export const makeStore = () => {
   return configureStore({
